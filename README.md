@@ -56,46 +56,16 @@ the Mawaqit slug, halls, booking types and the Qur'an/fatwa link lists.
 | `npm run db:seed` | Create the admin user |
 | `npm run db:reset` | Reset the database and re-seed |
 
-## Deployment (Ghiras.be · Node.js · subfolder `/Toekomst_vzw`)
+## Deployment
 
-Node.js ≥ 20.9 is required (see `.nvmrc`).
+Hosted at **https://ghiras.be/Toekomst_vzw** on the OVH VPS (PM2 process `toekomst`, port `3302`),
+deployed automatically on push to `main` via GitHub Actions.
 
-1. Clone the repository on the server and install dependencies:
-   ```bash
-   git clone https://github.com/AhmedAbouelyazied/Toekomst.git
-   cd Toekomst
-   npm ci
-   ```
-2. Create `.env` on the server (same keys as `.env.example`) **including**:
-   ```
-   NEXT_PUBLIC_BASE_PATH=/Toekomst_vzw
-   NEXT_PUBLIC_SITE_URL=https://ghiras.be/Toekomst_vzw
-   ```
-3. Build and prepare the database:
-   ```bash
-   npm run db:push
-   npm run db:seed
-   npm run build
-   ```
-4. Run it under pm2:
-   ```bash
-   npm i -g pm2
-   pm2 start ecosystem.config.cjs
-   pm2 save
-   pm2 startup
-   ```
-5. Point the host's `/Toekomst_vzw` path as a reverse proxy to `http://127.0.0.1:3000`.
+**Server:** host `51.161.114.226` · user `debian` · app dir `/var/www/toekomst`.
 
-> `NEXT_PUBLIC_BASE_PATH` is baked in at build time — set it before `npm run build`.
-
-### Updating
-
-```bash
-git pull
-npm ci
-npm run build
-pm2 restart toekomst
-```
+See **[DEPLOYMENT.md](./DEPLOYMENT.md)** for the full guide: GitHub secrets
+(`SERVER_HOST` / `SERVER_USER` / `SERVER_SSH_KEY`), the per-repo deploy key
+(`github-toekomst`), Nginx config and the manual deploy command.
 
 ## Project structure
 
