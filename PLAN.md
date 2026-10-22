@@ -1,5 +1,8 @@
 # PLAN — VZW De Toekomst website
 
+> **Status:** ✅ implemented and pushed to `github.com/AhmedAbouelyazied/Toekomst`.
+> See `README.md` for setup and deployment.
+
 **Folder:** `IDEAS/Toekomst/`
 **Repo:** `https://github.com/AhmedAbouelyazied/Toekomst`
 **Deploy:** `Ghiras.be/Toekomst_vzw` (Node.js, Next.js `basePath: '/Toekomst_vzw'`)
