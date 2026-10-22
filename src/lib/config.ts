@@ -10,16 +10,16 @@ export const org = {
     en: "Islamic centre & mosque in Ghent",
   },
   address: {
-    street: "Straatnaam 00", // TODO: replace with real address
+    street: "Rerum-Novarumplein 1",
     postalCode: "9000",
     city: "Gent",
     country: "België",
   },
-  phone: "+32 000 00 00 00", // TODO
+  phone: "0472 86 04 75",
   email: "info@toekomst.be", // TODO
   iban: "BE00 0000 0000 0000", // TODO
   facebook: "https://www.facebook.com/profile.php?id=100074718108818",
-  mapUrl: "https://maps.google.com/?q=Gent+9000",
+  mapUrl: "https://maps.google.com/?q=Rerum-Novarumplein+1,+9000+Gent",
 };
 
 export const mawaqit = {
