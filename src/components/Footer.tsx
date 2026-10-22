@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { org } from "@/lib/config";
+import { Logo } from "./Logo";
 
 export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const year = new Date().getFullYear();
@@ -22,13 +22,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:grid-cols-2 lg:grid-cols-3">
         <div>
           <div className="flex items-center gap-3">
-            <Image
-              src="/logo.jpg"
-              alt="VZW De Toekomst"
-              width={48}
-              height={48}
-              className="h-12 w-12 rounded-full object-cover"
-            />
+            <Logo size={48} className="h-12 w-12" />
             <div>
               <p className="font-semibold text-white">{org.name.nl}</p>
               <p className="text-sm text-white/70">{org.tagline.nl}</p>

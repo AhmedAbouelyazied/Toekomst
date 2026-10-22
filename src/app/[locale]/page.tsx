@@ -1,9 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { PrayerTimesLoader } from "@/components/PrayerTimesLoader";
+import { Logo } from "@/components/Logo";
 
 export default async function HomePage({
   params,
@@ -46,13 +46,9 @@ export default async function HomePage({
             </div>
           </div>
           <div className="flex justify-center">
-            <Image
-              src="/logo.jpg"
-              alt="VZW De Toekomst"
-              width={260}
-              height={260}
-              className="h-52 w-52 rounded-full bg-white object-cover shadow-xl sm:h-64 sm:w-64"
-              priority
+            <Logo
+              size={260}
+              className="h-52 w-52 bg-white object-cover shadow-xl sm:h-64 sm:w-64"
             />
           </div>
         </div>

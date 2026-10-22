@@ -1,12 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { Logo } from "./Logo";
 
 export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const pathname = usePathname();
@@ -30,14 +30,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
     <header className="sticky top-0 z-50 border-b border-brand-soft/60 bg-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <Link href={`/${locale}`} className="flex items-center gap-3">
-          <Image
-            src="/logo.jpg"
-            alt="VZW De Toekomst"
-            width={44}
-            height={44}
-            className="h-11 w-11 rounded-full object-cover"
-            priority
-          />
+          <Logo size={44} className="h-11 w-11" />
           <span className="hidden text-lg font-semibold text-brand-dark sm:block">
             De Toekomst
           </span>

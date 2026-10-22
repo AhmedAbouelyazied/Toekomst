@@ -14,6 +14,8 @@ const arabic = Noto_Naskh_Arabic({
   display: "swap",
 });
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://ghiras.be"),
   title: {
@@ -22,11 +24,11 @@ export const metadata: Metadata = {
   },
   description:
     "Islamitisch centrum en moskee in Gent: gebedstijden, activiteiten, school en zaalverhuur.",
-  icons: { icon: "/logo.jpg", apple: "/logo.jpg" },
+  icons: { icon: `${basePath}/logo.jpg`, apple: `${basePath}/logo.jpg` },
   openGraph: {
     title: "VZW De Toekomst — Islamitisch centrum Gent",
     description: "Gebed, kennis en gemeenschap in Gent.",
-    images: ["/logo.jpg"],
+    images: [`${basePath}/logo.jpg`],
   },
 };
 
