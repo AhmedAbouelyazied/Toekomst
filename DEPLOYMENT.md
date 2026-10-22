@@ -79,10 +79,19 @@ BOOKING_FROM_EMAIL=VZW De Toekomst <noreply@ghiras.be>
 Add to `/etc/nginx/sites-available/ghiras.be`, then `sudo nginx -t && sudo systemctl reload nginx`:
 
 ```nginx
-# Root of the app has no trailing slash, and Next's proxy matcher needs one —
-# redirect it here so /Toekomst_vzw lands on /nl.
-location = /Toekomst_vzw  { return 301 /Toekomst_vzw/nl; }
-location = /Toekomst_vzw/ { return 301 /Toekomst_vzw/nl; }
+# Language-aware root redirect. Next's proxy matcher needs a trailing slash after
+# the basePath, so the bare root is handled here (map is valid in the http context).
+map $http_accept_language $toekomst_locale {
+    default nl;
+    ~*^ar ar;
+    ~*^fr fr;
+    ~*^en en;
+    ~*^nl nl;
+}
+
+# (inside the server block)
+location = /Toekomst_vzw  { return 301 /Toekomst_vzw/$toekomst_locale; }
+location = /Toekomst_vzw/ { return 301 /Toekomst_vzw/$toekomst_locale; }
 
 location /Toekomst_vzw/ {
     proxy_pass http://127.0.0.1:3302;
