@@ -1,15 +1,16 @@
 # PLAN — VZW De Toekomst website
 
-> **Status:** ✅ implemented and pushed to `github.com/AhmedAbouelyazied/Toekomst`.
-> See `README.md` for setup and deployment.
+> **Status:** ✅ implemented, deployed and pushed to `github.com/AhmedAbouelyazied/Toekomst`.
+> Live at **https://ghiras.be/Toekomst_vzw** (auto-deploys on push to `main`).
+> See `README.md` for setup and `DEPLOYMENT.md` for hosting.
 
 **Folder:** `IDEAS/Toekomst/`
 **Repo:** `https://github.com/AhmedAbouelyazied/Toekomst`
-**Deploy:** `Ghiras.be/Toekomst_vzw` (Node.js, Next.js `basePath: '/Toekomst_vzw'`)
+**Deploy:** `ghiras.be/Toekomst_vzw` (OVH VPS, Node.js/PM2 port 3302, Next.js `basePath`)
 
-**Stack:** Next.js 15 (App Router) · TypeScript · Tailwind CSS v4 · Prisma + SQLite · Resend · next-intl
+**Stack:** Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · Prisma + SQLite · Resend
 **Logo:** `IDEAS/Toekomst/logo.jpg` → header / footer / favicon / OG image
-**Languages:** Dutch (`nl`, default) · Arabic (`ar`, RTL) · English (`en`)
+**Languages:** Dutch (`nl`, default) · Arabic (`ar`, RTL) · English (`en`) · French (`fr`)
 
 ## Mosque / prayer times (Mawaqit)
 - Page: `https://mawaqit.net/en/de-toekomst-ghant-9000-belgium`
@@ -19,10 +20,10 @@
   shuruq, jumua, hijri). Backend fetches and caches it (keyless); iframe widget fallback.
 
 ## Build steps
-1. **Scaffold** Next.js 15 + TS + Tailwind v4, deps (next-intl, prisma, resend, zod, jose, bcryptjs),
-   `.gitignore`, `.env.example`, `.nvmrc`, `next.config` with `basePath`/`assetPrefix`.
-2. **i18n & theme** — `messages/{nl,ar,en}.json`, locale routes `/[locale]/...`, NL|AR|EN toggle,
-   RTL for Arabic, teal/green palette from logo, shared Header/Footer.
+1. **Scaffold** Next.js 16 + TS + Tailwind v4, deps (prisma, resend, zod, jose),
+   `.gitignore`, `.env.example`, `.nvmrc`, `next.config` with `basePath`.
+2. **i18n & theme** — `messages/{nl,ar,en,fr}.json`, locale routes `/[locale]/...`, NL|AR|EN|FR toggle,
+   RTL for Arabic, browser-language detection at the root, teal/green palette from logo, shared Header/Footer.
 3. **Pages:** `/` Home · `/activiteiten` · `/regels` · `/gebedstijden` · `/school` ·
    `/reserveren` · `/links` · `/contact`.
 4. **Prayer times (Mawaqit)** — `lib/mawaqit.ts` fetches the mosque page, parses `confData`,
@@ -43,10 +44,15 @@
 10. **Git** — init, commit, push to `AhmedAbouelyazied/Toekomst` (`.gitignore` protects
     `.env` / `*.db`).
 
-## Deployment (Ghiras.be, Node.js)
-- `git pull` on the server + `pm2` process manager (`ecosystem.config.cjs`).
-- Node ≥ 20 (target 20/22); `.nvmrc` included.
+## Deployment (ghiras.be · OVH VPS)
+- Auto-deploy on push to `main` via GitHub Actions (`.github/workflows/deploy.yml`).
+- Server: `debian@51.161.114.226`, dir `/var/www/toekomst`; PM2 process `toekomst` (port 3302).
+- `deploy.sh`: flock → `git pull` (deploy key `github-toekomst`) → `npm ci` → `db:push` → `db:seed`
+  → `build` → `pm2 reload`.
+- Nginx proxies `/Toekomst_vzw/` → `127.0.0.1:3302` with a language-aware root redirect.
+- Details in `DEPLOYMENT.md`.
 
 ## Open items / placeholders
-- Org contact details & IBAN (Facebook page was not machine-readable) → `lib/config.ts` placeholders.
-- Real admin password + Resend API key to be set in `.env` on the server.
+- `lib/config.ts`: org **email** and **IBAN** still placeholders (address + phone are set:
+  Rerum-Novarumplein 1, 9000 Gent · 0472 86 04 75).
+- Server `.env`: generated admin password set; `RESEND_API_KEY` empty (booking emails disabled).

@@ -1,14 +1,15 @@
 # VZW De Toekomst — website
 
-Multilingual website (Nederlands · العربية · English) for **VZW De Toekomst**, an Islamic
-centre and mosque in Ghent (Gent, 9000, België).
+Multilingual website (Nederlands · العربية · English · Français) for **VZW De Toekomst**, an
+Islamic centre and mosque in Ghent (Gent, 9000, België).
 
 Built with **Next.js 16 (App Router)** · TypeScript · Tailwind CSS v4 · Prisma (SQLite) · Resend.
 
 ## Features
 
 - **Pages:** Home · Activiteiten · Regels · Gebedstijden · School · Reserveren · Links · Contact
-- **Trilingual** with `nl` (default), `ar` (RTL) and `en`, plus a language switcher.
+- **Quadrilingual** with `nl` (default), `ar` (RTL), `en` and `fr`, plus a language switcher
+  and browser-language detection at the root.
 - **Prayer times** live from Mawaqit (`de-toekomst-ghant-9000-belgium`), cached server-side.
 - **Hall booking** form (bruiloft / عزاء / عقيقة / overig) with validation, rate limiting,
   conflict detection, database storage and email notifications.
@@ -76,7 +77,7 @@ src/
     api/                 # route handlers (prayer-times, bookings, admin)
   components/            # Header, Footer, BookingForm, PrayerTimes, admin/*
   i18n/                  # locales + dictionaries
-  messages/              # nl.json · ar.json · en.json
+  messages/              # nl.json · ar.json · en.json · fr.json
   lib/                   # config, mawaqit parser, prisma, auth, email, ...
   proxy.ts               # locale redirect (Next.js 16 "proxy" convention)
 prisma/schema.prisma     # Booking + AdminUser
