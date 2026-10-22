@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { isLocale } from "@/i18n/config";
+import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { PageHeader } from "@/components/PageHeader";
 import { fatwaLinks, quranLinks, type LinkItem } from "@/lib/config";
@@ -13,7 +13,7 @@ function LinkGroup({
   title: string;
   intro: string;
   items: LinkItem[];
-  locale: "nl" | "ar" | "en";
+  locale: Locale;
 }) {
   return (
     <section className="mt-10 first:mt-0">

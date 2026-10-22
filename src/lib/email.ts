@@ -1,5 +1,5 @@
 import { Resend } from "resend";
-import { bookingTypes, halls, org } from "./config";
+import { bookingTypes, halls, org, type Localized } from "./config";
 import type { BookingInput } from "./bookings";
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
@@ -7,7 +7,7 @@ const from = process.env.BOOKING_FROM_EMAIL || "VZW De Toekomst <no-reply@toekom
 const to = process.env.BOOKING_TO_EMAIL || org.email;
 
 function labelOf(
-  list: { id: string; label: { nl: string; ar: string; en: string } }[],
+  list: { id: string; label: Localized }[],
   id: string,
 ): string {
   return list.find((item) => item.id === id)?.label.nl ?? id;

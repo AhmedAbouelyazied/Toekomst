@@ -1,0 +1,191 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "activities": "Activités",
+    "rules": "Règles",
+    "prayer": "Heures de prière",
+    "school": "École",
+    "booking": "Réservation",
+    "links": "Liens",
+    "contact": "Contact"
+  },
+  "common": {
+    "loading": "Chargement…",
+    "error": "Une erreur est survenue.",
+    "submit": "Envoyer",
+    "sending": "Envoi…",
+    "language": "Langue",
+    "readMore": "Plus d'infos",
+    "contactUs": "Contactez-nous",
+    "bookNow": "Réserver",
+    "allRightsReserved": "Tous droits réservés.",
+    "sponsorCta": "Soutenez VZW De Toekomst"
+  },
+  "home": {
+    "heroTitle": "Bienvenue à VZW De Toekomst",
+    "heroSubtitle": "Un centre islamique et une mosquée au cœur de Gand — pour la prière, le savoir et la communauté.",
+    "heroCta": "Voir les heures de prière",
+    "heroCta2": "Réserver une salle",
+    "missionTitle": "Notre mission",
+    "missionText": "VZW De Toekomst renforce la communauté musulmane à Gand et ses environs. Nous offrons un lieu pour la prière, l'éducation, les rencontres et le soutien dans la joie comme dans l'épreuve.",
+    "quickLinksTitle": "Accès rapide",
+    "prayerTeaserTitle": "Heures de prière aujourd'hui",
+    "prayerTeaserText": "Consultez les heures d'adhan et d'iqama actuelles de notre mosquée.",
+    "ctaTitle": "Besoin d'une salle pour votre occasion ?",
+    "ctaText": "Réservez nos salles pour un mariage, un عزاء, une عقيقة ou toute autre réunion."
+  },
+  "activities": {
+    "title": "Activités",
+    "intro": "Tout au long de l'année, nous organisons de nombreuses activités pour petits et grands.",
+    "items": [
+      {
+        "title": "Prière du vendredi (Jumuʿa)",
+        "when": "Chaque vendredi",
+        "desc": "Sermon hebdomadaire et prière du vendredi en communauté."
+      },
+      {
+        "title": "Cours de Coran",
+        "when": "Chaque semaine",
+        "desc": "Leçons de récitation (tajwid) et de mémorisation du Coran."
+      },
+      {
+        "title": "Fêtes islamiques",
+        "when": "ʿĪd al-Fiṭr & ʿĪd al-Aḍḥā",
+        "desc": "Prière de la fête, rencontres et activités pour toute la famille."
+      },
+      {
+        "title": "Conférences & journées d'étude",
+        "when": "Chaque mois",
+        "desc": "Conférences données par des savants et des orateurs invités sur divers sujets."
+      },
+      {
+        "title": "Activités pour la jeunesse",
+        "when": "Toute l'année",
+        "desc": "Sport, sorties et rencontres pour les jeunes."
+      },
+      {
+        "title": "Programme du Ramadan",
+        "when": "Ramadan",
+        "desc": "Iftar, prière de tarawih et rencontres communautaires."
+      }
+    ]
+  },
+  "rules": {
+    "title": "Règlement intérieur",
+    "intro": "Pour que notre mosquée et nos salles restent agréables et respectueuses pour tous, nous vous demandons de respecter les règles suivantes.",
+    "items": [
+      "Entrez dans la mosquée avec des chaussures propres et une tenue appropriée.",
+      "Gardez les espaces propres et jetez les déchets dans les poubelles prévues.",
+      "Respectez le calme pendant la prière et les conférences.",
+      "N'utilisez pas de téléphone ni d'appareils perturbateurs pendant la prière.",
+      "Il est interdit de fumer dans les bâtiments.",
+      "Respectez les biens de la mosquée et des autres visiteurs.",
+      "Les enfants restent sous la surveillance de leurs parents ou accompagnateurs.",
+      "Suivez les consignes du comité et des bénévoles."
+    ],
+    "note": "Le non-respect des règles peut entraîner un refus d'accès."
+  },
+  "prayer": {
+    "title": "Heures de prière",
+    "intro": "Les heures d'adhan et d'iqama actuelles de la Mosquée De Toekomst à Gand.",
+    "today": "Aujourd'hui",
+    "adhan": "Adhan",
+    "iqama": "Iqama",
+    "shuruq": "Shurūq",
+    "imsak": "Imsāk",
+    "jumua": "Jumuʿa",
+    "hijri": "Date hégirienne",
+    "fajr": "Fajr",
+    "dhuhr": "Dhuhr",
+    "asr": "Asr",
+    "maghrib": "Maghrib",
+    "isha": "Isha",
+    "nextPrayer": "Prochaine prière",
+    "viewOnMawaqit": "Voir sur Mawaqit",
+    "loading": "Chargement des heures de prière…",
+    "error": "Les heures de prière n'ont pas pu être chargées. Consultez-les sur Mawaqit."
+  },
+  "school": {
+    "title": "École islamique",
+    "intro": "Notre école du week-end et du soir offre un enseignement islamique aux enfants et aux jeunes.",
+    "classesTitle": "Notre offre",
+    "classes": [
+      {
+        "title": "Coran & récitation",
+        "desc": "Apprendre à lire et à réciter le Coran avec un tajwid correct."
+      },
+      {
+        "title": "Langue arabe",
+        "desc": "Lire, écrire et parler l'arabe."
+      },
+      {
+        "title": "Éducation islamique",
+        "desc": "Croyance (ʿaqīdah), fiqh et vie du Prophète ﷺ."
+      }
+    ],
+    "scheduleTitle": "Horaire des cours",
+    "day": "Jour",
+    "time": "Heure",
+    "group": "Groupe",
+    "schedule": [
+      { "day": "Samedi", "time": "10:00 – 13:00", "group": "Enfants 6–12 ans" },
+      { "day": "Dimanche", "time": "10:00 – 13:00", "group": "Jeunes 12–18 ans" },
+      { "day": "Mercredi", "time": "17:00 – 19:00", "group": "Coran (tous âges)" }
+    ],
+    "registerNote": "Pour s'inscrire ou pour plus d'infos ? Contactez-nous."
+  },
+  "booking": {
+    "title": "Réserver une salle",
+    "intro": "Réservez nos salles pour un mariage, un عزاء, une عقيقة ou une autre occasion. Remplissez le formulaire et nous vous contacterons dès que possible.",
+    "formTitle": "Formulaire de demande",
+    "type": "Type d'occasion",
+    "name": "Nom",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "date": "Date",
+    "startTime": "De",
+    "endTime": "À",
+    "hall": "Salle",
+    "guests": "Nombre de personnes",
+    "message": "Infos supplémentaires",
+    "consent": "J'accepte que mes données soient utilisées pour traiter ma demande.",
+    "submit": "Envoyer la demande",
+    "sending": "Envoi…",
+    "success": "Merci !",
+    "successText": "Votre demande a bien été reçue. Nous vous contacterons dès que possible.",
+    "error": "Votre demande n'a pas pu être envoyée. Réessayez plus tard.",
+    "selectPlaceholder": "Faites un choix",
+    "required": "Ce champ est obligatoire.",
+    "invalidEmail": "Veuillez saisir une adresse e-mail valide.",
+    "invalidPhone": "Veuillez saisir un numéro de téléphone valide.",
+    "invalidGuests": "Veuillez saisir un nombre de personnes valide."
+  },
+  "links": {
+    "title": "Liens utiles",
+    "intro": "Des sources fiables pour lire le Coran et consulter des fatwas.",
+    "quranTitle": "Le Coran",
+    "quranIntro": "Lisez, écoutez et étudiez le Coran en ligne.",
+    "fatwaTitle": "Fatwas & savoir",
+    "fatwaIntro": "Des sources fiables pour les règles islamiques et le savoir."
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Vous avez une question ou souhaitez passer ? Vous êtes les bienvenus.",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "iban": "IBAN (soutenez-nous)",
+    "hours": "Heures d'ouverture",
+    "hoursValue": "Ouvert tous les jours autour des heures de prière.",
+    "facebook": "Facebook",
+    "map": "Voir sur la carte",
+    "sponsorTitle": "Parrainage",
+    "sponsorText": "Soutenez VZW De Toekomst et aidez notre communauté à grandir. Contactez-nous pour les possibilités."
+  },
+  "footer": {
+    "quickLinks": "Navigation",
+    "contact": "Contact",
+    "follow": "Suivez-nous",
+    "sponsorNote": "Sadaqa jariya — soutenez notre action."
+  }
+}

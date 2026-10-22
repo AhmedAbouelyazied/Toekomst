@@ -16,7 +16,7 @@ export const bookingSchema = z.object({
   guests: z.coerce.number().int().min(1).max(5000),
   message: z.string().max(2000).optional().or(z.literal("")),
   consent: z.literal(true),
-  locale: z.enum(["nl", "ar", "en"]).default("nl"),
+  locale: z.enum(["nl", "ar", "en", "fr"]).default("nl"),
   // honeypot — must stay empty
   website: z.string().max(0).optional().or(z.literal("")),
 });
