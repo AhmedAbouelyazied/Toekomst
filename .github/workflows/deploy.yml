@@ -19,5 +19,12 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: 22
           script: |
+            set -e
+            # First-run bootstrap: the repo (and its deploy.sh) may not exist on the server yet.
+            if [ ! -f /var/www/toekomst/deploy.sh ]; then
+              echo "[ci] Bootstrapping /var/www/toekomst from GitHub..."
+              mkdir -p /var/www/toekomst
+              git clone -b main git@github-toekomst:AhmedAbouelyazied/Toekomst.git /var/www/toekomst
+            fi
             chmod +x /var/www/toekomst/deploy.sh
             bash /var/www/toekomst/deploy.sh

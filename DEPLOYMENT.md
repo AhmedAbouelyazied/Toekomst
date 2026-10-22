@@ -61,7 +61,7 @@ sudo chown debian:debian /var/www/toekomst
 Create `/var/www/toekomst/.env` (mode `600`) with the production values:
 
 ```env
-DATABASE_URL="file:./prisma/prod.db"
+DATABASE_URL="file:./prod.db"
 NEXT_PUBLIC_BASE_PATH=/Toekomst_vzw
 NEXT_PUBLIC_SITE_URL=https://ghiras.be/Toekomst_vzw
 ADMIN_EMAIL=you@example.com
@@ -79,18 +79,21 @@ BOOKING_FROM_EMAIL=VZW De Toekomst <noreply@ghiras.be>
 Add to `/etc/nginx/sites-available/ghiras.be`, then `sudo nginx -t && sudo systemctl reload nginx`:
 
 ```nginx
-location = /Toekomst_vzw { return 301 /Toekomst_vzw/; }
+# Root of the app has no trailing slash, and Next's proxy matcher needs one —
+# redirect it here so /Toekomst_vzw lands on /nl.
+location = /Toekomst_vzw  { return 301 /Toekomst_vzw/nl; }
+location = /Toekomst_vzw/ { return 301 /Toekomst_vzw/nl; }
 
 location /Toekomst_vzw/ {
     proxy_pass http://127.0.0.1:3302;
     proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     proxy_set_header X-Forwarded-Proto $scheme;
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection "upgrade";
-    client_max_body_size 20M;
+    proxy_cache_bypass $http_upgrade;
 }
 ```
 
