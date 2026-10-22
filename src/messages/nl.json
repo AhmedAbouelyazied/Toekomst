@@ -1,0 +1,191 @@
+{
+  "nav": {
+    "home": "Home",
+    "activities": "Activiteiten",
+    "rules": "Regels",
+    "prayer": "Gebedstijden",
+    "school": "School",
+    "booking": "Reserveren",
+    "links": "Links",
+    "contact": "Contact"
+  },
+  "common": {
+    "loading": "Laden…",
+    "error": "Er is iets misgegaan.",
+    "submit": "Versturen",
+    "sending": "Versturen…",
+    "language": "Taal",
+    "readMore": "Meer info",
+    "contactUs": "Neem contact op",
+    "bookNow": "Reserveer nu",
+    "allRightsReserved": "Alle rechten voorbehouden.",
+    "sponsorCta": "Steun VZW De Toekomst"
+  },
+  "home": {
+    "heroTitle": "Welkom bij VZW De Toekomst",
+    "heroSubtitle": "Een islamitisch centrum en moskee in het hart van Gent — voor gebed, kennis en gemeenschap.",
+    "heroCta": "Bekijk gebedstijden",
+    "heroCta2": "Reserveer een zaal",
+    "missionTitle": "Onze missie",
+    "missionText": "VZW De Toekomst versterkt de moslimgemeenschap in Gent en omgeving. Wij bieden een plek voor gebed, onderwijs, ontmoeting en ondersteuning bij vreugde en verdriet.",
+    "quickLinksTitle": "Snel naar",
+    "prayerTeaserTitle": "Gebedstijden vandaag",
+    "prayerTeaserText": "Bekijk de actuele adhan- en iqamatijden van onze moskee.",
+    "ctaTitle": "Een zaal nodig voor uw gelegenheid?",
+    "ctaText": "Reserveer onze zalen voor een bruiloft, عزاء, عقيقة of een andere bijeenkomst."
+  },
+  "activities": {
+    "title": "Activiteiten",
+    "intro": "Door het jaar heen organiseren wij tal van activiteiten voor jong en oud.",
+    "items": [
+      {
+        "title": "Vrijdaggebed (Jumuʿa)",
+        "when": "Elke vrijdag",
+        "desc": "Wekelijkse preek en gezamenlijk vrijdaggebed voor de gemeenschap."
+      },
+      {
+        "title": "Koranlessen",
+        "when": "Wekelijks",
+        "desc": "Lessen in recitatie (tajwid) en het uit het hoofd leren van de Koran."
+      },
+      {
+        "title": "Islamitische feesten",
+        "when": "ʿĪd al-Fiṭr & ʿĪd al-Aḍḥā",
+        "desc": "Feestgebed, bijeenkomsten en activiteiten voor het hele gezin."
+      },
+      {
+        "title": "Lezingen & studiedagen",
+        "when": "Maandelijks",
+        "desc": "Lezingen door geleerden en gastsprekers over uiteenlopende thema's."
+      },
+      {
+        "title": "Jeugdactiviteiten",
+        "when": "Door het jaar",
+        "desc": "Sport, uitstappen en ontmoetingen voor jongeren."
+      },
+      {
+        "title": "Ramadan-programma",
+        "when": "Ramadan",
+        "desc": "Iftar, tarawih-gebed en gemeenschappelijke bijeenkomsten."
+      }
+    ]
+  },
+  "rules": {
+    "title": "Huisregels",
+    "intro": "Om onze moskee en zalen voor iedereen aangenaam en respectvol te houden, vragen wij onderstaande regels na te leven.",
+    "items": [
+      "Betreed de moskee met schone schoenen en in gepaste kledij.",
+      "Houd de ruimtes netjes en gooi afval in de daarvoor bestemde bakken.",
+      "Respecteer de rust tijdens het gebed en de lezingen.",
+      "Gebruik geen gsm of storende apparaten tijdens het gebed.",
+      "Het is niet toegestaan te roken in de gebouwen.",
+      "Respecteer de eigendommen van de moskee en van andere bezoekers.",
+      "Kinderen blijven onder toezicht van hun ouders of begeleider.",
+      "Volg de aanwijzingen van het bestuur en de vrijwilligers op."
+    ],
+    "note": "Het niet naleven van de regels kan leiden tot weigering van toegang."
+  },
+  "prayer": {
+    "title": "Gebedstijden",
+    "intro": "De actuele adhan- en iqamatijden van Moskee De Toekomst in Gent.",
+    "today": "Vandaag",
+    "adhan": "Adhan",
+    "iqama": "Iqama",
+    "shuruq": "Shurūq",
+    "imsak": "Imsāk",
+    "jumua": "Jumuʿa",
+    "hijri": "Hijri-datum",
+    "fajr": "Fajr",
+    "dhuhr": "Dhuhr",
+    "asr": "Asr",
+    "maghrib": "Maghrib",
+    "isha": "Isha",
+    "nextPrayer": "Volgend gebed",
+    "viewOnMawaqit": "Bekijk op Mawaqit",
+    "loading": "Gebedstijden laden…",
+    "error": "Gebedstijden konden niet worden geladen. Bekijk ze op Mawaqit."
+  },
+  "school": {
+    "title": "Islamitische school",
+    "intro": "Onze weekend- en avondschool biedt islamitisch onderwijs aan kinderen en jongeren.",
+    "classesTitle": "Ons aanbod",
+    "classes": [
+      {
+        "title": "Koran & recitatie",
+        "desc": "Leren lezen en reciteren van de Koran met correcte tajwid."
+      },
+      {
+        "title": "Arabische taal",
+        "desc": "Lezen, schrijven en spreken van het Arabisch."
+      },
+      {
+        "title": "Islamitische opvoeding",
+        "desc": "Geloofsleer (ʿaqīdah), fiqh en de levensloop van de Profeet ﷺ."
+      }
+    ],
+    "scheduleTitle": "Lessenrooster",
+    "day": "Dag",
+    "time": "Uur",
+    "group": "Groep",
+    "schedule": [
+      { "day": "Zaterdag", "time": "10:00 – 13:00", "group": "Kinderen 6–12 jaar" },
+      { "day": "Zondag", "time": "10:00 – 13:00", "group": "Jongeren 12–18 jaar" },
+      { "day": "Woensdag", "time": "17:00 – 19:00", "group": "Koran (alle leeftijden)" }
+    ],
+    "registerNote": "Inschrijven of meer info? Neem contact met ons op."
+  },
+  "booking": {
+    "title": "Zaal reserveren",
+    "intro": "Reserveer onze zalen voor een bruiloft, عزاء, عقيقة of een andere gelegenheid. Vul het formulier in en wij nemen zo snel mogelijk contact met u op.",
+    "formTitle": "Aanvraagformulier",
+    "type": "Type gelegenheid",
+    "name": "Naam",
+    "email": "E-mail",
+    "phone": "Telefoon",
+    "date": "Datum",
+    "startTime": "Van",
+    "endTime": "Tot",
+    "hall": "Zaal",
+    "guests": "Aantal personen",
+    "message": "Extra info",
+    "consent": "Ik ga akkoord dat mijn gegevens worden gebruikt om mijn aanvraag te verwerken.",
+    "submit": "Aanvraag versturen",
+    "sending": "Versturen…",
+    "success": "Bedankt!",
+    "successText": "Uw aanvraag is goed ontvangen. Wij nemen zo snel mogelijk contact met u op.",
+    "error": "Uw aanvraag kon niet worden verstuurd. Probeer het later opnieuw.",
+    "selectPlaceholder": "Maak een keuze",
+    "required": "Dit veld is verplicht.",
+    "invalidEmail": "Voer een geldig e-mailadres in.",
+    "invalidPhone": "Voer een geldig telefoonnummer in.",
+    "invalidGuests": "Voer een geldig aantal personen in."
+  },
+  "links": {
+    "title": "Nuttige links",
+    "intro": "Betrouwbare bronnen voor het lezen van de Koran en het opzoeken van fatwa's.",
+    "quranTitle": "De Koran",
+    "quranIntro": "Lees, beluister en bestudeer de Koran online.",
+    "fatwaTitle": "Fatwa's & kennis",
+    "fatwaIntro": "Betrouwbare bronnen voor islamitische rulings en kennis."
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Heeft u een vraag of wilt u langskomen? U bent van harte welkom.",
+    "address": "Adres",
+    "phone": "Telefoon",
+    "email": "E-mail",
+    "iban": "IBAN (steun ons)",
+    "hours": "Openingsuren",
+    "hoursValue": "Dagelijks open rond de gebedstijden.",
+    "facebook": "Facebook",
+    "map": "Bekijk op kaart",
+    "sponsorTitle": "Sponsoring",
+    "sponsorText": "Steun VZW De Toekomst en help onze gemeenschap groeien. Neem contact op voor de mogelijkheden."
+  },
+  "footer": {
+    "quickLinks": "Navigatie",
+    "contact": "Contact",
+    "follow": "Volg ons",
+    "sponsorNote": "Sadaqa jariyah — steun onze werking."
+  }
+}

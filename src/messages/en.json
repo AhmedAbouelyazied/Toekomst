@@ -1,0 +1,191 @@
+{
+  "nav": {
+    "home": "Home",
+    "activities": "Activities",
+    "rules": "Rules",
+    "prayer": "Prayer times",
+    "school": "School",
+    "booking": "Booking",
+    "links": "Links",
+    "contact": "Contact"
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong.",
+    "submit": "Submit",
+    "sending": "Sending…",
+    "language": "Language",
+    "readMore": "More info",
+    "contactUs": "Contact us",
+    "bookNow": "Book now",
+    "allRightsReserved": "All rights reserved.",
+    "sponsorCta": "Support VZW De Toekomst"
+  },
+  "home": {
+    "heroTitle": "Welcome to VZW De Toekomst",
+    "heroSubtitle": "An Islamic centre and mosque in the heart of Ghent — for prayer, knowledge and community.",
+    "heroCta": "View prayer times",
+    "heroCta2": "Book a hall",
+    "missionTitle": "Our mission",
+    "missionText": "VZW De Toekomst strengthens the Muslim community in Ghent and beyond. We provide a place for prayer, education, meeting and support in joy and sorrow.",
+    "quickLinksTitle": "Quick links",
+    "prayerTeaserTitle": "Prayer times today",
+    "prayerTeaserText": "See the current adhan and iqama times of our mosque.",
+    "ctaTitle": "Need a hall for your occasion?",
+    "ctaText": "Book our halls for a wedding, عزاء, عقيقة or any other gathering."
+  },
+  "activities": {
+    "title": "Activities",
+    "intro": "Throughout the year we organise many activities for young and old.",
+    "items": [
+      {
+        "title": "Friday prayer (Jumuʿa)",
+        "when": "Every Friday",
+        "desc": "Weekly sermon and congregational Friday prayer for the community."
+      },
+      {
+        "title": "Qur'an classes",
+        "when": "Weekly",
+        "desc": "Lessons in recitation (tajwid) and memorisation of the Qur'an."
+      },
+      {
+        "title": "Islamic festivals",
+        "when": "ʿĪd al-Fiṭr & ʿĪd al-Aḍḥā",
+        "desc": "Festival prayer, gatherings and activities for the whole family."
+      },
+      {
+        "title": "Lectures & study days",
+        "when": "Monthly",
+        "desc": "Lectures by scholars and guest speakers on various topics."
+      },
+      {
+        "title": "Youth activities",
+        "when": "All year",
+        "desc": "Sports, trips and meet-ups for young people."
+      },
+      {
+        "title": "Ramadan programme",
+        "when": "Ramadan",
+        "desc": "Iftar, tarawih prayer and communal gatherings."
+      }
+    ]
+  },
+  "rules": {
+    "title": "House rules",
+    "intro": "To keep our mosque and halls pleasant and respectful for everyone, we ask you to observe the following rules.",
+    "items": [
+      "Enter the mosque with clean shoes and in appropriate clothing.",
+      "Keep the spaces tidy and dispose of waste in the designated bins.",
+      "Respect the quiet during prayer and lectures.",
+      "Do not use phones or disruptive devices during prayer.",
+      "Smoking is not permitted inside the buildings.",
+      "Respect the property of the mosque and of other visitors.",
+      "Children remain under the supervision of their parents or guardian.",
+      "Follow the instructions of the board and volunteers."
+    ],
+    "note": "Failure to observe the rules may lead to refusal of entry."
+  },
+  "prayer": {
+    "title": "Prayer times",
+    "intro": "The current adhan and iqama times of De Toekomst Mosque in Ghent.",
+    "today": "Today",
+    "adhan": "Adhan",
+    "iqama": "Iqama",
+    "shuruq": "Shurūq",
+    "imsak": "Imsāk",
+    "jumua": "Jumuʿa",
+    "hijri": "Hijri date",
+    "fajr": "Fajr",
+    "dhuhr": "Dhuhr",
+    "asr": "Asr",
+    "maghrib": "Maghrib",
+    "isha": "Isha",
+    "nextPrayer": "Next prayer",
+    "viewOnMawaqit": "View on Mawaqit",
+    "loading": "Loading prayer times…",
+    "error": "Prayer times could not be loaded. View them on Mawaqit."
+  },
+  "school": {
+    "title": "Islamic school",
+    "intro": "Our weekend and evening school offers Islamic education to children and youth.",
+    "classesTitle": "What we offer",
+    "classes": [
+      {
+        "title": "Qur'an & recitation",
+        "desc": "Learning to read and recite the Qur'an with correct tajwid."
+      },
+      {
+        "title": "Arabic language",
+        "desc": "Reading, writing and speaking Arabic."
+      },
+      {
+        "title": "Islamic upbringing",
+        "desc": "Creed (ʿaqīdah), fiqh and the life of the Prophet ﷺ."
+      }
+    ],
+    "scheduleTitle": "Class schedule",
+    "day": "Day",
+    "time": "Time",
+    "group": "Group",
+    "schedule": [
+      { "day": "Saturday", "time": "10:00 – 13:00", "group": "Children 6–12 years" },
+      { "day": "Sunday", "time": "10:00 – 13:00", "group": "Youth 12–18 years" },
+      { "day": "Wednesday", "time": "17:00 – 19:00", "group": "Qur'an (all ages)" }
+    ],
+    "registerNote": "To register or for more info? Get in touch with us."
+  },
+  "booking": {
+    "title": "Book a hall",
+    "intro": "Book our halls for a wedding, عزاء, عقيقة or another occasion. Fill in the form and we will contact you as soon as possible.",
+    "formTitle": "Request form",
+    "type": "Type of occasion",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "date": "Date",
+    "startTime": "From",
+    "endTime": "To",
+    "hall": "Hall",
+    "guests": "Number of guests",
+    "message": "Additional info",
+    "consent": "I agree that my data will be used to process my request.",
+    "submit": "Send request",
+    "sending": "Sending…",
+    "success": "Thank you!",
+    "successText": "Your request has been received. We will contact you as soon as possible.",
+    "error": "Your request could not be sent. Please try again later.",
+    "selectPlaceholder": "Make a choice",
+    "required": "This field is required.",
+    "invalidEmail": "Please enter a valid email address.",
+    "invalidPhone": "Please enter a valid phone number.",
+    "invalidGuests": "Please enter a valid number of guests."
+  },
+  "links": {
+    "title": "Useful links",
+    "intro": "Trusted sources for reading the Qur'an and looking up fatwas.",
+    "quranTitle": "The Qur'an",
+    "quranIntro": "Read, listen to and study the Qur'an online.",
+    "fatwaTitle": "Fatwas & knowledge",
+    "fatwaIntro": "Trusted sources for Islamic rulings and knowledge."
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Do you have a question or would you like to visit? You are most welcome.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "iban": "IBAN (support us)",
+    "hours": "Opening hours",
+    "hoursValue": "Open daily around prayer times.",
+    "facebook": "Facebook",
+    "map": "View on map",
+    "sponsorTitle": "Sponsorship",
+    "sponsorText": "Support VZW De Toekomst and help our community grow. Contact us for the options."
+  },
+  "footer": {
+    "quickLinks": "Navigation",
+    "contact": "Contact",
+    "follow": "Follow us",
+    "sponsorNote": "Sadaqa jariyah — support our work."
+  }
+}
